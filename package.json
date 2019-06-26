@@ -24,10 +24,10 @@
     "url": "https://github.com/pohsiu/react-native-date-ranges"
   },
   "dependencies": {
-    "react": ">=16.0.0-alpha.12",
-    "moment": "^2.22.1",
+    "moment": "^2.24.0",
     "moment-range": "2.2.0",
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
   },
   "peerDependencies": {
     "react-native": ">=0.41.2"
