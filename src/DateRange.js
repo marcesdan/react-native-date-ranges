@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Text, View, TouchableOpacity, Picker } from "react-native";
 import PropTypes from "prop-types";
 import moment from "moment";
+import 'moment/locale/es'
 import normalize from "./normalizeText";
 import Month from "./Month";
 
@@ -168,11 +169,11 @@ export default class DateRange extends Component {
               <Text style={markTitle}>{markText}</Text>
               <View style={styles.dateContainer}>
                 <Text style={headerDate}>
-                  {this.state.clearStart ? this.state.clearStart : "Start Date"}
+                  {this.state.clearStart ? this.state.clearStart : "-"}
                 </Text>
                 <Text style={styles.headTitleText} />
                 <Text style={headerDate}>
-                  {this.state.clearEnd ? this.state.clearEnd : "End Date"}
+                  {this.state.clearEnd ? this.state.clearEnd : "-"}
                 </Text>
               </View>
             </View>
