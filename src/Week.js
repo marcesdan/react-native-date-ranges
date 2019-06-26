@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import 'moment/min/moment-with-locales'
+import 'moment/min/locales';
 import 'moment-range';
 import { dates } from './dates';
 import normalize from './normalizeText';

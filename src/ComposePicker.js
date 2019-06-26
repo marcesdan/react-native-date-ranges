@@ -3,7 +3,7 @@ import { View, TouchableHighlight, Modal, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import DateRange from './DateRange';
 import moment from 'moment';
-import 'moment/min/moment-with-locales'
+import 'moment/min/locales';
 import normalize from './normalizeText';
 
 const styles = {
