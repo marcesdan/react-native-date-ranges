@@ -52,7 +52,7 @@ export default class Month extends Component {
     weekRange.by('days', (day) => {
       dayNames.push(
         <Text key={day.date()} style={styles.dayName}>
-          {day.format('dd')[0]}
+          {day.format('dd')}
         </Text>
       )
     })
