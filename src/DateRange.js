@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, TouchableOpacity, Picker } from "react-native";
 import PropTypes from "prop-types";
 import moment from "moment";
-import 'moment/locale/es'
+import 'moment/min/moment-with-locales'
 import normalize from "./normalizeText";
 import Month from "./Month";
 
@@ -48,6 +48,7 @@ const rangeArray = Array.from(new Array(interval), (val, index) => index + min);
 export default class DateRange extends Component {
   constructor(props) {
     super(props);
+    moment.locale(props.locale)
     const defalutFormat =
       !props.mode || props.mode === "single" ? "ddd, MMM D" : "MMM DD,YYYY";
     this.state = {
