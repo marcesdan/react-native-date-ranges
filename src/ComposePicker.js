@@ -28,7 +28,7 @@ const styles = {
 export default class ComposePicker extends Component {
   constructor(props) {
     super(props);
-    moment.locale(props.locale);
+    // moment.locale(props.locale);
     this.state = {
       modalVisible: false,
       allowPointerEvents: true,
@@ -144,6 +144,7 @@ export default class ComposePicker extends Component {
   };
 
   render() {
+    moment.locale(this.props.locale);
     const { customStyles = {} } = this.props;
 
     let style = styles.stylish;
