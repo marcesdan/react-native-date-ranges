@@ -22,10 +22,10 @@ const styles = {
   }
 }
 export default class Month extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   moment.locale(props.locale)
-  // }
+  constructor(props) {
+    super(props)
+    moment.locale(props.locale)
+  }
 
   render() {
     moment.locale(this.props.locale);
